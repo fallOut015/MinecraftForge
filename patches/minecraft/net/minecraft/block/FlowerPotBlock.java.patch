@@ -72,6 +72,9 @@
 +   private final java.util.function.Supplier<FlowerPotBlock> emptyPot;
 +   private final java.util.function.Supplier<? extends Block> flowerDelegate;
 +
++   public Map<net.minecraft.util.ResourceLocation, java.util.function.Supplier<? extends Block>> getFullPots() {
++       return fullPots;
++   }
 +   public FlowerPotBlock getEmptyPot() {
 +       return emptyPot == null ? this : emptyPot.get();
 +   }
